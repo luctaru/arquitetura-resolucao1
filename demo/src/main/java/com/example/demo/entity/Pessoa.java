@@ -8,16 +8,23 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-public class Docente implements Serializable extends Pessoa{
-
-    protected String titulo;
+public class Pessoa implements Serializable {
+ 
+    @Id @GeneratedValue
+    protected Long id;
+    
+    protected String name;
+    protected String cpf;
+    protected String email;
+    protected String telefone;
+    @Temporal (TemporalType.DATE)
+    protected Date ingresso;
    
+    
 }

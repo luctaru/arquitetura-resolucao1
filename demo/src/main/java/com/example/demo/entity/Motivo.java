@@ -8,7 +8,7 @@ import javax.persistence.MappedSuperclass;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-public abstract class Motivo extends Serializable {
+public class Motivo extends Serializable {
     
     @Id @GeneratedValue
     protected Long id;
