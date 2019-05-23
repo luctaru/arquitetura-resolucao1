@@ -8,6 +8,7 @@ import javax.persistence.MappedSuperclass;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//O correto seria ser "implements"
 public class Motivo extends Serializable {
     
     @Id @GeneratedValue

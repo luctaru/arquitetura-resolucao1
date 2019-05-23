@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Entity
+//O arquivo aparentemente foi criado como "Aula" e a classe foi renomeada para "Docente" sem renomear o arquivo
 public class Docente implements Serializable {
  
     @Id @GeneratedValue
@@ -24,6 +25,7 @@ public class Docente implements Serializable {
     protected String cpf;
     protected String email;
     protected String telefone;
+    //Não foi incluída a importação java.util.Date
     protected Date ingresso;
     protected int ra;
     

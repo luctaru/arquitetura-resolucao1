@@ -16,6 +16,7 @@ import javax.persistence.TemporalType;
 @AllArgsConstructor
 @Builder
 @Entity
+//Duplicidade da classe "Docente" e erro na ordem de "implements" e "extends"
 public class Docente implements Serializable extends Pessoa{
 
     protected String titulo;

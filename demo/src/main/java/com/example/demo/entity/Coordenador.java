@@ -18,6 +18,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Builder
 @Entity
+//O arquivo aparentemente foi criado como "Coordenador" e a classe foi renomeada para "CoordenadorCurso" sem renomear o arquivo
+//A classe "Professor" não existe no projeto
 public class CoordenadorCurso extends Professor implements Serializable {
 
     private Curso curso;

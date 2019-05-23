@@ -23,7 +23,8 @@ public class Curso implements Serializable {
     @Id @GeneratedValue
     private Long id;
     private String nome;
-    
+
+    //A renomeação das classes não foi consistente no sistema, causando a ausência da classe referenciada
     private Coordenador coordenador;
     
 }
