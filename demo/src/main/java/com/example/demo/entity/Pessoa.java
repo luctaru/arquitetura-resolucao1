@@ -23,6 +23,7 @@ public class Pessoa implements Serializable {
     protected String cpf;
     protected String email;
     protected String telefone;
+    //Não foram importadas as biblioteca para Temporal e Date
     @Temporal (TemporalType.DATE)
     protected Date ingresso;
    

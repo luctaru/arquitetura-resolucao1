@@ -21,6 +21,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Entity
+//Erro causado pela ordem incorreta de "implements" e "extends"
 public class Dicente implements Serializable extends Pessoa{
 
     protected String RA;
